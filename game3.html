@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<!--
+
+In this file, comments are used to identify different parts of the code by letter.
+The Sporclone Instructions file will refer to letters when describing the sequence of
+steps necessary to create a working Sporclone game. Complete the project according
+to the order of the NUMBERED instructions, not the order of the letters.
+
+DO NOT DELETE THE LETTER COMMENTS AFTER YOU COMPLETE STEPS!!!!!
+
+-->
+
+<html>
+<head>
+<!-- a. -->
+<title>Sporclone: Obscure Fighting Games</title>
+
+<!-- b. -->
+<link rel="stylesheet" href="css/main.css">
+
+<!-- You may optionally style the table in your answers section here. -->
+<style>
+table {
+
+}
+
+tr {
+
+}
+
+th {
+
+}
+
+td {
+    
+}
+
+table span {
+    /* applies only to span tags within table */
+    border: 1px solid #AAAAAA;
+    display: inline-block;
+    height: 20px;
+    width: 200px;
+}
+
+
+</style>
+
+<script>
+/*********** Game configuration ***********/
+
+// c.
+var answers = ["dark stalkers", "clay fighter", "gem fighter", "rivals of aether | roa", "virtua fighter", "guilty gear", "nidhogg", "shaq-fu", "skullgirls", "aorns rabbit", "asuras blade", "waku waku 7"];
+
+
+// d.
+var time_limit =80; // in seconds
+
+</script>
+
+</head>
+
+
+<!-- e. -->
+<body onload="setup()">
+
+<header>
+    <h1>Sporclone</h1>
+</header>
+
+<div class="frame">
+
+    <section>
+
+        <aside>
+            <h3>More Games</h3>
+            <ul>
+            <!-- f. -->
+            <li><a href="index.html">Melee Characters</a></li>
+            <li><a href="game2.html">Smash 64 Characters</a></li>
+            </ul>
+        </aside>
+
+        <!-- g. -->
+        <img class="icon" src="img/icon3.jpg" alt="quiz logo">
+
+        <!-- h. -->
+        <h2>Name The Obscure Fighting Games</h2>
+
+    </section>
+
+    <section>
+
+        <div class="column">
+            <!-- i. -->
+            <input id="start" onclick="start()" type="button" value="PLAY GAME">
+        </div>
+
+        <div class="column">
+            <!-- j. -->
+            <h3>Enter Game name:</h3>
+
+            <!-- k.  -->
+            <input id="guess" onKeyUp="check()" type="text">
+        </div>
+
+        <div class="column">
+            <h3>Score</h3>
+            <span id="score"></span>
+        </div>
+
+        <div class="column">
+            <h3>Time</h3>
+            <span id="time"></span>
+        </div>
+
+    </section>
+
+    <section>
+
+        <!-- l. -->
+        <table>
+        <tr>
+            <td>
+                <img src="img/fg1a.png"> <br>
+                <span id="answer0"></span>
+            </td>
+            
+            <td>
+                <img src="img/fg2a.png"> <br>
+                <span id="answer1"></span>
+            </td>
+    
+            <td>
+                <img src="img/fg3a.png"> <br>
+                <span id="answer2"></span>
+            </td>
+            
+            <td>
+                <img src="img/fg4a.png"> <br>
+                <span id="answer3"></span>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                <img src="img/fg5a.png"> <br>
+                <span id="answer4"></span>
+            </td>
+            
+            <td>
+                <img src="img/fg6a.jpg"> <br>
+                <span id="answer5"></span>
+            </td>
+                
+            <td>
+                <img src="img/fg7a.jpg"> <br>
+                <span id="answer6"></span>
+            </td>
+            
+            <td>
+                <img src="img/fg8a.png"> <br>
+                <span id="answer7"></span>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                <img src="img/fg9a.png"> <br>
+                <span id="answer8"></span>
+            </td>
+            
+            <td>
+                <img src="img/fg10a.jpg"> <br>
+                <span id="answer9"></span>
+            </td>
+                
+            <td>
+                <img src="img/fg11a.png"> <br>
+                <span id="answer10"></span>
+            </td>
+            
+            <td>
+                <img src="img/fg12a.jpg"> <br>
+                <span id="answer11"></span>
+            </td>
+        </tr>
+        </table>
+
+    </section>
+
+    <footer>
+
+        <!-- m. -->
+        <p>Quiz by Ethan M.</p>
+
+    </footer>
+
+</div>
+
+<!-- n. -->
+<script src="js/sporclone.js"></script>
+
+</body>
+</html>
